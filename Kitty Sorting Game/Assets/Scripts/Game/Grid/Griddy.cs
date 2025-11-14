@@ -14,6 +14,17 @@ public class Griddy : MonoBehaviour
     private Vector2 _offset = new Vector2(0.0f, 0.0f);
     private List<GameObject> _gridSquares = new List<GameObject>();
 
+    private void OnEnable()
+    {
+        GameEvents.CheckIfShapeCanBePlaced += CheckIfShapeCanBePlaced;
+    }
+
+    private void OnDisable()
+    {
+        GameEvents.CheckIfShapeCanBePlaced -= CheckIfShapeCanBePlaced;
+    }
+
+
     void Start()
     {
         CreateGrid();
@@ -40,8 +51,8 @@ public class Griddy : MonoBehaviour
                 square_index++;
             }
         }
-    } 
-    
+    }
+
     private void SetGridSquaresPositions()
     {
         int column_number = 0;
@@ -86,6 +97,19 @@ public class Griddy : MonoBehaviour
             square.GetComponent<RectTransform>().localPosition = new Vector3(startPosition.x + pos_x_offset, startPosition.y - pos_y_offset, 0.0f);
 
             column_number++;
+        }
+    }
+    
+    private void CheckIfShapeCanBePlaced()
+    {
+        foreach (var square in _gridSquares)
+        {
+            var gridSquare = square.GetComponent<GridSquare>();
+
+            if (gridSquare.CanWeUseThisSquare() == true)
+            {
+                gridSquare.ActivateSquare();
+            }
         }
     }
 }

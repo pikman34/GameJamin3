@@ -13,10 +13,7 @@ MonoBehaviour:
   m_Name: ChunkyGuy
   m_EditorClassIdentifier: 
   columns: 3
-  rows: 5
+  rows: 2
   board:
-  - column: 000000
-  - column: 000000
-  - column: 000101
-  - column: 010101
+  - column: 000001
   - column: 010101
