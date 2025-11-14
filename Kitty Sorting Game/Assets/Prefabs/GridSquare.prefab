@@ -164,7 +164,7 @@ GameObject:
   - component: {fileID: 8475807568538792056}
   m_Layer: 5
   m_Name: GridSquare
-  m_TagString: Untagged
+  m_TagString: GridSquare
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

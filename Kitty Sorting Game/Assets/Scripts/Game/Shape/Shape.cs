@@ -11,12 +11,19 @@ public class Shape : MonoBehaviour, IPointerClickHandler, IPointerUpHandler, IBe
 
     //[HideInInspector]
     public ShapeData CurrentShapeData;
+    public ShapeStorage shapeStorage;
+    public int TotalSquareNumber { get; set; }
 
     private List<GameObject> _currentShape = new List<GameObject>();
+    public List<GridSquare> _occupiedSquares = new List<GridSquare>();
     private Vector3 _shapeStartScale;
     private RectTransform _transform;
     private bool _shapeDraggable = true;
     private Canvas _canvas;
+
+    private bool _shapeActive = true;
+    public bool isPlaced = false;
+    
 
     public void Awake()
     {
@@ -24,6 +31,50 @@ public class Shape : MonoBehaviour, IPointerClickHandler, IPointerUpHandler, IBe
         _transform = this.GetComponent<RectTransform>();
         _canvas = GetComponentInParent<Canvas>();
         _shapeDraggable = true;
+        _shapeActive = true;
+    }
+
+    /*public bool IsOnStartPosition()
+    {
+        return _transform.localPosition == _startposition;
+    }*/
+
+    public bool IsAnyOfShapeSquareActive()
+    {
+        foreach (var square in _currentShape)
+        {
+            if (square.gameObject.activeSelf)
+                return true;
+        }
+        return false;
+    }
+
+    public void DeactivateShape()
+    {
+        if (_shapeActive)
+        {
+            foreach (var square in _currentShape)
+            {
+                square.GetComponent<BoxCollider2D>().enabled = false;
+                square.GetComponent<ShapeSquare>().DeactivateShape();
+            }
+        }
+
+        _shapeActive = false;
+    }
+
+    public void ActivateShape()
+    {
+        if (!_shapeActive)
+        {
+            foreach (var square in _currentShape)
+            {
+                square.GetComponent<BoxCollider2D>().enabled = true;
+                square.GetComponent<ShapeSquare>().ActivateShape();
+            }
+        }
+
+        _shapeActive = true;
     }
 
     void Start()
@@ -34,14 +85,15 @@ public class Shape : MonoBehaviour, IPointerClickHandler, IPointerUpHandler, IBe
     public void RequestNewShape(ShapeData shapeData)
     {
         CreateShape(shapeData);
+        //_transform.localScale = _startposition;
     }
 
     public void CreateShape(ShapeData shapeData)
     {
         CurrentShapeData = shapeData;
-        var totalSquareNumber = GetNumberOfSquares(shapeData);
+        TotalSquareNumber = GetNumberOfSquares(shapeData);
 
-        while (_currentShape.Count <= totalSquareNumber)
+        while (_currentShape.Count <= TotalSquareNumber)
         {
             _currentShape.Add(Instantiate(squareShapeImage, transform) as GameObject);
         }
@@ -232,10 +284,54 @@ public class Shape : MonoBehaviour, IPointerClickHandler, IPointerUpHandler, IBe
     {
         this.GetComponent<RectTransform>().localScale = _shapeStartScale;
         GameEvents.CheckIfShapeCanBePlaced();
+
+        bool canPlace = true;
+
+        foreach (var square in _currentShape)
+        {
+            var shapeSquare = square.GetComponent<ShapeSquare>();
+
+
+            if (shapeSquare.currentGridSquare == null || shapeSquare.currentGridSquare.SquareOccupied)
+            {
+                canPlace = false;
+                break;
+            }
+
+            _occupiedSquares.Add(shapeSquare.currentGridSquare);
+        }
+
+        if (canPlace)
+        {
+            var firstSquarePos = _occupiedSquares[0].transform.position;
+            transform.position = firstSquarePos;
+
+            foreach (var gridSquare in _occupiedSquares)
+            {
+                gridSquare.PlaceShapeOnBoard();
+            }
+
+            isPlaced = true;
+        }
     }
     
     public void OnPointerDown(PointerEventData eventData)
     {
+        shapeStorage.currentSelectedShape = this;
         
+        if (isPlaced)
+        {
+            ActivateShape();
+            isPlaced = false;
+        }
+
+        foreach (var gridSquare in _occupiedSquares)
+        {
+            gridSquare.SquareOccupied = false;
+            gridSquare.Selected = false;
+            gridSquare.activeImage.gameObject.SetActive(false);
+        }
+
+        _occupiedSquares.Clear();
     }
 }

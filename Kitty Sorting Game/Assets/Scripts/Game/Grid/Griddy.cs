@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class Griddy : MonoBehaviour
 {
+    public ShapeStorage shapeStorage;
     public int columns = 0;
     public int rows = 0;
     public float squaresGap = 0.1f;
@@ -13,6 +14,7 @@ public class Griddy : MonoBehaviour
 
     private Vector2 _offset = new Vector2(0.0f, 0.0f);
     private List<GameObject> _gridSquares = new List<GameObject>();
+    
 
     private void OnEnable()
     {
@@ -45,6 +47,8 @@ public class Griddy : MonoBehaviour
             for(var column = 0; column < columns; column++)
             {
                 _gridSquares.Add(Instantiate(gridSquare) as GameObject);
+
+                _gridSquares[_gridSquares.Count - 1].GetComponent<GridSquare>().SquareIndex = square_index;
                 _gridSquares[_gridSquares.Count - 1].transform.SetParent(this.transform);
                 _gridSquares[_gridSquares.Count - 1].transform.localScale = new Vector3(squareScale, squareScale, squareScale);
                 _gridSquares[_gridSquares.Count - 1].GetComponent<GridSquare>().SetImage(square_index % 2 == 0);
@@ -102,14 +106,38 @@ public class Griddy : MonoBehaviour
     
     private void CheckIfShapeCanBePlaced()
     {
-        foreach (var square in _gridSquares)
-        {
-            var gridSquare = square.GetComponent<GridSquare>();
+        var currentShape = shapeStorage.GetCurrentSelectedShape();
+        if (currentShape == null) return;
 
-            if (gridSquare.CanWeUseThisSquare() == true)
+        List<GridSquare> matchedSquares = new List<GridSquare>();
+
+        foreach (var squareObj in _gridSquares)
+        {
+            var gridSquare = squareObj.GetComponent<GridSquare>();
+
+            if (gridSquare.CanWeUseThisSquare())
             {
-                gridSquare.ActivateSquare();
+                if (gridSquare.SquareOccupied)
+                {
+                    return;
+                }
+
+                matchedSquares.Add(gridSquare);
             }
         }
+
+        if (matchedSquares.Count != currentShape.TotalSquareNumber)
+        {
+            return;
+        }
+
+        foreach (var gridSquare in matchedSquares)
+        {
+            gridSquare.PlaceShapeOnBoard();
+            currentShape._occupiedSquares.Add(gridSquare);
+        }
+
+        currentShape.DeactivateShape();
+        currentShape.isPlaced = true;
     }
 }

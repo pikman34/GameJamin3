@@ -254,6 +254,7 @@ MonoBehaviour:
   - {fileID: 1122345477}
   - {fileID: 2070212439}
   - {fileID: 1554844777}
+  currentSelectedShape: {fileID: 0}
 --- !u!1 &1096610237
 GameObject:
   m_ObjectHideFlags: 0
@@ -366,6 +367,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1585396194}
     m_Modifications:
+    - target: {fileID: 797480733822403938, guid: 60008a75cb47a0049b9547708e64ac3c, type: 3}
+      propertyPath: shapeStorage
+      value: 
+      objectReference: {fileID: 915100025}
     - target: {fileID: 1756420228922540891, guid: 60008a75cb47a0049b9547708e64ac3c, type: 3}
       propertyPath: m_Name
       value: LCatShapeTutorial
@@ -519,8 +524,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da2767afb176c634784b362c8c988564, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shapeStorage: {fileID: 915100025}
   columns: 3
-  rows: 3
+  rows: 4
   squaresGap: 0.5
   gridSquare: {fileID: 5447075547081581163, guid: de83fbd3aff7fb7449521485cdde6f7c, type: 3}
   startPosition: {x: -107, y: 191.66}
@@ -534,6 +540,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1585396194}
     m_Modifications:
+    - target: {fileID: 797480733822403938, guid: e9a413ce9e513634f8f03131ca221137, type: 3}
+      propertyPath: shapeStorage
+      value: 
+      objectReference: {fileID: 915100025}
     - target: {fileID: 1756420228922540891, guid: e9a413ce9e513634f8f03131ca221137, type: 3}
       propertyPath: m_Name
       value: SquareKittyTutorial
@@ -636,6 +646,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1585396194}
     m_Modifications:
+    - target: {fileID: 797480733822403938, guid: 290a688495503604bb2ccce2c6ef7195, type: 3}
+      propertyPath: shapeStorage
+      value: 
+      objectReference: {fileID: 915100025}
     - target: {fileID: 1756420228922540891, guid: 290a688495503604bb2ccce2c6ef7195, type: 3}
       propertyPath: m_Name
       value: SkinnyLongKittyTutorial
