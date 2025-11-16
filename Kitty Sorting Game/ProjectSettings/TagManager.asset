@@ -6,6 +6,7 @@ TagManager:
   tags:
   - ShapeSquare
   - GridSquare
+  - music
   layers:
   - Default
   - TransparentFX

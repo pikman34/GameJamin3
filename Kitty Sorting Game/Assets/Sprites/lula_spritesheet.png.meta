@@ -1,0 +1,351 @@
+fileFormatVersion: 2
+guid: 6566c0cf15b18bb44958f297783c5714
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -817177923055569443
+    second: lula_spritesheet_0
+  - first:
+      213: -280246301656879063
+    second: lula_spritesheet_1
+  - first:
+      213: 714442489698296239
+    second: lula_spritesheet_2
+  - first:
+      213: 6050169753513718767
+    second: lula_spritesheet_3
+  - first:
+      213: 1981123302433007718
+    second: lula_spritesheet_4
+  - first:
+      213: -8303028553007304103
+    second: lula_spritesheet_5
+  - first:
+      213: -8304429992847561992
+    second: lula_spritesheet_6
+  - first:
+      213: -834470464218218272
+    second: lula_spritesheet_7
+  - first:
+      213: -3565639433162193818
+    second: lula_spritesheet_8
+  - first:
+      213: -5420998923582949251
+    second: lula_spritesheet_9
+  - first:
+      213: 4906828310700687191
+    second: lula_spritesheet_10
+  - first:
+      213: -6193884558210393204
+    second: lula_spritesheet_11
+  - first:
+      213: -2507091977255985179
+    second: lula_spritesheet_12
+  - first:
+      213: -4914557579026783703
+    second: lula_spritesheet_13
+  - first:
+      213: 1972754312647405340
+    second: lula_spritesheet_14
+  - first:
+      213: 6170697797786110944
+    second: lula_spritesheet_15
+  - first:
+      213: 3293613677727603245
+    second: lula_spritesheet_16
+  - first:
+      213: -6956674307542244217
+    second: lula_spritesheet_17
+  - first:
+      213: 5158145287677224227
+    second: lula_spritesheet_18
+  - first:
+      213: -2306657866608679339
+    second: lula_spritesheet_19
+  - first:
+      213: -3095351353251210261
+    second: lula_spritesheet_20
+  - first:
+      213: 7890213589556642259
+    second: lula_spritesheet_21
+  - first:
+      213: -4823467364290727426
+    second: lula_spritesheet_22
+  - first:
+      213: 2160785888562771340
+    second: lula_spritesheet_23
+  - first:
+      213: -5123498732995764058
+    second: lula_spritesheet_24
+  - first:
+      213: 364066683663536197
+    second: lula_spritesheet_25
+  - first:
+      213: 699937592316618722
+    second: lula_spritesheet_26
+  - first:
+      213: 1417949130025370406
+    second: lula_spritesheet_27
+  - first:
+      213: 1486985187117628585
+    second: lula_spritesheet_28
+  - first:
+      213: -8510512727177560050
+    second: lula_spritesheet_29
+  - first:
+      213: -6833279045649530532
+    second: lula_spritesheet_30
+  - first:
+      213: -5509046002790176809
+    second: lula_spritesheet_31
+  - first:
+      213: 7121874540266854560
+    second: lula_spritesheet_32
+  - first:
+      213: -437721351631079976
+    second: lula_spritesheet_33
+  - first:
+      213: -3243147821344547427
+    second: lula_spritesheet_34
+  - first:
+      213: 385165783513747459
+    second: lula_spritesheet_35
+  - first:
+      213: 7638427404208597807
+    second: lula_spritesheet_36
+  - first:
+      213: -2050155333444079964
+    second: lula_spritesheet_37
+  - first:
+      213: 2922084528075557422
+    second: lula_spritesheet_38
+  - first:
+      213: -3783744385312798488
+    second: lula_spritesheet_39
+  - first:
+      213: 1446928164622474184
+    second: lula_spritesheet_40
+  - first:
+      213: -1173226630656599253
+    second: lula_spritesheet_41
+  - first:
+      213: -5872530154794913370
+    second: lula_spritesheet_42
+  - first:
+      213: -5018226192294254141
+    second: lula_spritesheet_43
+  - first:
+      213: 7186534101350614840
+    second: lula_spritesheet_44
+  - first:
+      213: 7969479156823553912
+    second: lula_spritesheet_45
+  - first:
+      213: -8544635426710163697
+    second: lula_spritesheet_46
+  - first:
+      213: -1504442909772494208
+    second: lula_spritesheet_47
+  - first:
+      213: 2413072045328309317
+    second: lula_spritesheet_48
+  - first:
+      213: 1324818665141800347
+    second: lula_spritesheet_49
+  - first:
+      213: 3748053987744378219
+    second: lula_spritesheet_50
+  - first:
+      213: 1362713481067745307
+    second: lula_spritesheet_51
+  - first:
+      213: 7539060879674337290
+    second: lula_spritesheet_52
+  - first:
+      213: -8503660503342433005
+    second: lula_spritesheet_53
+  - first:
+      213: -309372718338937290
+    second: lula_spritesheet_54
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: lula_spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 29
+        width: 983
+        height: 973
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd53bf1320dc8a4f0800000000000000
+      internalID: -817177923055569443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lula_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 29
+        width: 989
+        height: 973
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe37ffce55586f350800000000000000
+      internalID: 6050169753513718767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lula_spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 2159
+        y: 29
+        width: 1015
+        height: 962
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8b97189fc6ea0aa0800000000000000
+      internalID: -6193884558210393204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5ec5e8084ef26d14cb990d7d1584cdfe
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      lula_spritesheet_0: -817177923055569443
+      lula_spritesheet_11: -6193884558210393204
+      lula_spritesheet_3: 6050169753513718767
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

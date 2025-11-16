@@ -24,7 +24,7 @@ public class ShapeSquare : MonoBehaviour
     public void ActivateShape() 
     { 
         var color = normalImage.color;
-        color.a = 1f; 
+        color.a = 0.75f; 
         normalImage.color = color; 
         
         normalImage.raycastTarget = true; 
