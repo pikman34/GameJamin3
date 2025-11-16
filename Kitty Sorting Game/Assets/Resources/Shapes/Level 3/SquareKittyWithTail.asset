@@ -15,6 +15,6 @@ MonoBehaviour:
   columns: 2
   rows: 3
   board:
-  - column: 0001
   - column: 0101
   - column: 0101
+  - column: 0100

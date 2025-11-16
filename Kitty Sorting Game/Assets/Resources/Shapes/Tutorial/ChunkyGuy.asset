@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6dbc31c72610f84db37cc1bbfcf4d4d, type: 3}
   m_Name: ChunkyGuy
   m_EditorClassIdentifier: 
-  columns: 3
-  rows: 2
+  columns: 2
+  rows: 3
   board:
-  - column: 000101
-  - column: 010101
+  - column: 0100
+  - column: 0101
+  - column: 0101
