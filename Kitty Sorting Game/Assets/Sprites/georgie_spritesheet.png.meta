@@ -1,0 +1,286 @@
+fileFormatVersion: 2
+guid: 4b780d5804e5c964eb5df8eb3b21ad88
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1403191832207026489
+    second: georgie_spritesheet_0
+  - first:
+      213: -7517217932819451180
+    second: georgie_spritesheet_1
+  - first:
+      213: 2360923733148014375
+    second: georgie_spritesheet_2
+  - first:
+      213: 4704217812204084863
+    second: georgie_spritesheet_3
+  - first:
+      213: -2244381706582641525
+    second: georgie_spritesheet_4
+  - first:
+      213: 891731136066359693
+    second: georgie_spritesheet_5
+  - first:
+      213: -2807150842052556114
+    second: georgie_spritesheet_6
+  - first:
+      213: -483276755590626739
+    second: georgie_spritesheet_7
+  - first:
+      213: -4061188197037570140
+    second: georgie_spritesheet_8
+  - first:
+      213: 5215941234161256999
+    second: georgie_spritesheet_9
+  - first:
+      213: -5298674677878367798
+    second: georgie_spritesheet_10
+  - first:
+      213: -372264603180403775
+    second: georgie_spritesheet_11
+  - first:
+      213: -8814172414855809422
+    second: georgie_spritesheet_12
+  - first:
+      213: 4096426360717426568
+    second: georgie_spritesheet_13
+  - first:
+      213: 5424366272948175871
+    second: georgie_spritesheet_14
+  - first:
+      213: -4446528367241871270
+    second: georgie_spritesheet_15
+  - first:
+      213: 2670175509200368112
+    second: georgie_spritesheet_16
+  - first:
+      213: -2387342188101974575
+    second: georgie_spritesheet_17
+  - first:
+      213: -7689953426365077673
+    second: georgie_spritesheet_18
+  - first:
+      213: -3544854973344165773
+    second: georgie_spritesheet_19
+  - first:
+      213: 8915921468599900825
+    second: georgie_spritesheet_20
+  - first:
+      213: -5615492439501968714
+    second: georgie_spritesheet_21
+  - first:
+      213: -5181814619991215550
+    second: georgie_spritesheet_22
+  - first:
+      213: -5626238156489737747
+    second: georgie_spritesheet_23
+  - first:
+      213: 4383413485548778907
+    second: georgie_spritesheet_24
+  - first:
+      213: 7621886645074071350
+    second: georgie_spritesheet_25
+  - first:
+      213: -8477240855196942955
+    second: georgie_spritesheet_26
+  - first:
+      213: -1301808893517353439
+    second: georgie_spritesheet_27
+  - first:
+      213: -3033382998324219232
+    second: georgie_spritesheet_28
+  - first:
+      213: -4334156242074482134
+    second: georgie_spritesheet_29
+  - first:
+      213: -8659614408150817584
+    second: georgie_spritesheet_30
+  - first:
+      213: -5286307747898825647
+    second: georgie_spritesheet_31
+  - first:
+      213: 3279694470779240612
+    second: georgie_spritesheet_32
+  - first:
+      213: 5744161602301337035
+    second: georgie_spritesheet_33
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: georgie_spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 43
+        width: 1000
+        height: 976
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c61299867cd68ce0800000000000000
+      internalID: -1403191832207026489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: georgie_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 43
+        width: 1020
+        height: 976
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7e5d7a1d2db84140800000000000000
+      internalID: 4704217812204084863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: georgie_spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 2246
+        y: 43
+        width: 987
+        height: 976
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eaac48c9e2ffa09d0800000000000000
+      internalID: -2807150842052556114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e69733cdeac4a404e9ed7c079a35226f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      georgie_spritesheet_1: -1433301470
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
